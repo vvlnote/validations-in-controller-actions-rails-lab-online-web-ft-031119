@@ -8,7 +8,7 @@ class PostsController < ApplicationController
   end
 
   def update
-    binding.pry
+    #binding.pry
     @post = set_post!
     @post.update(post_params)
     if @post.update(post_params)
