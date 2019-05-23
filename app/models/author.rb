@@ -1,4 +1,4 @@
 class Author < ActiveRecord::Base
   validates :name, presence: true
-  validates :email, uniqu
+  validates :email, uniqueness: true
 end
