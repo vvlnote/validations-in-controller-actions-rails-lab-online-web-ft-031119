@@ -12,7 +12,7 @@ class PostsController < ApplicationController
     @post = set_post!
     
     if @post.update(post_params)
-      @past.save
+      @post.save
       redirect_to post_path(@post)
     else
       render :edit
